@@ -1,0 +1,8 @@
+.calpick     {
+  width:16px;
+  height:16px;
+  border:none;
+  cursor:pointer;
+  background:url("/bundles/calendar/images/cal.gif") no-repeat center 2px;
+  margin-left:-22px;
+}

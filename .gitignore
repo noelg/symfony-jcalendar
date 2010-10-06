@@ -1,0 +1,4 @@
+/src/vendor/
+/calendar/cache/*
+/calendar/logs/*
+/web/bundles/

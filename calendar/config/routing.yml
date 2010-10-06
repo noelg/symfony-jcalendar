@@ -1,0 +1,6 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: CalendarBundle:Calendar:index }
+
+calendar:
+    resource: CalendarBundle/Resources/config/routing.xml
