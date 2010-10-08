@@ -18,7 +18,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        editEvent({ deleteURL: "<?php echo $view['router']->generate('calendar_delete') ?>"});
+        editEvent({ eventId: <?php echo ($event ? $event->getId() : 0) ?>, deleteURL: "<?php echo $view['router']->generate('calendar_delete') ?>"});
     });
 </script>
 

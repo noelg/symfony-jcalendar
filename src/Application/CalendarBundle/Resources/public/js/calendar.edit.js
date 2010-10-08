@@ -45,7 +45,7 @@ function getHM(date)
   var ret= (hour>9?hour:"0"+hour)+":"+(minute>9?minute:"0"+minute) ;
   return ret;
 }
-function editEvent(options) {
+function editEvent(editOptions) {
   //debugger;
   var arrT = [];
   var tt = "{0}:{1}";
@@ -97,13 +97,12 @@ function editEvent(options) {
     if (confirm("Are you sure to remove this event")) {
       var param = [{
         "name": "calendarId",
-        value: 8
+        value: editOptions.eventId
       }];
-      $.post(options.deleteURL,
+      $.post(editOptions.deleteURL,
         param,
         function(data){
           if (data.IsSuccess) {
-            alert(data.Msg);
             CloseModelWindow(null,true);
           }
           else {
