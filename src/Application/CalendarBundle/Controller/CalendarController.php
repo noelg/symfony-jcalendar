@@ -76,7 +76,7 @@ class CalendarController extends Controller
         $id = $this['request']->get('id');
         $event = $em->find('CalendarBundle:Event', $id);
 
-        return $this->render('CalendarBundle:Calendar:edit', array('event' => $event));
+        return $this->render('CalendarBundle:Calendar:edit.php', array('event' => $event));
     }
 
     public function updateDetailsAction()
