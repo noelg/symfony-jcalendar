@@ -1,4 +1,4 @@
-<?php $view->extend('::layout') ?>
+<?php $view->extend('::layout.php') ?>
 <?php $view['stylesheets']->add('bundles/calendar/css/wdCalendar/dailog.css') ?>
 <?php $view['stylesheets']->add('bundles/calendar/css/wdCalendar/calendar.css') ?>
 <?php $view['stylesheets']->add('bundles/calendar/css/wdCalendar/dp.css') ?>

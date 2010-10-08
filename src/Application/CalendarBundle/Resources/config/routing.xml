@@ -3,7 +3,7 @@
 <routes xmlns="http://www.symfony-project.org/schema/routing"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.symfony-project.org/schema/routing http://www.symfony-project.org/schema/routing/routing-1.0.xsd">
-    
+
     <route id="calendar" pattern="/calendar">
         <default key="_controller">CalendarBundle:Calendar:index</default>
     </route>
@@ -27,7 +27,6 @@
     <route id="calendar_updateDetails" pattern="/calendar/updateDetails">
         <default key="_controller">CalendarBundle:Calendar:updateDetails</default>
     </route>
-
 
     <route id="calendar_delete" pattern="/calendar/delete">
         <default key="_controller">CalendarBundle:Calendar:delete</default>

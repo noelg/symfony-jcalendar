@@ -2,63 +2,61 @@
 
 namespace Application\CalendarBundle\Entity;
 
-
 /**
- * @Table()
- * @Entity(repositoryClass="Application\CalendarBundle\Entity\EventRepository")
+ * @Doctrine\ORM\Mapping\Entity(repositoryClass="Application\CalendarBundle\Entity\EventRepository")
  */
 class Event
 {
     /**
-     * @Id
-     * @Column(type="integer")
-     * @GeneratedValue(strategy="IDENTITY")
+     * @Doctrine\ORM\Mapping\Id
+     * @Doctrine\ORM\Mapping\Column(type="integer")
+     * @Doctrine\ORM\Mapping\GeneratedValue(strategy="IDENTITY")
      */
     protected $id;
 
     /**
-     * @Column(type="string", length="255")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="255")
      */
     protected $name;
 
     /**
-     * @Column(type="string", length="1024")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="1024")
      */
     protected $subject;
 
     /**
-     * @Column(type="string", length="1024")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="1024")
      */
     protected $location;
 
     /**
-     * @Column(type="string", length="255")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="255")
      */
     protected $description;
 
     /**
-     * @Column(type="datetime")
+     * @Doctrine\ORM\Mapping\Column(type="datetime")
      */
     protected $startTime;
 
     /**
-     * @Column(type="datetime")
+     * @Doctrine\ORM\Mapping\Column(type="datetime")
      */
     protected $endTime;
 
 
     /**
-     * @Column(type="boolean")
+     * @Doctrine\ORM\Mapping\Column(type="boolean")
      */
     protected $isAllDayEvent;
 
     /**
-     * @Column(type="string", length="200")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="200")
      */
     protected $color;
 
     /**
-     * @Column(type="string", length="200")
+     * @Doctrine\ORM\Mapping\Column(type="string", length="200")
      */
     protected $recurringRule;
 

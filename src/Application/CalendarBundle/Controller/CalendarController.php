@@ -10,7 +10,7 @@ class CalendarController extends Controller
 
     public function indexAction()
     {
-        return $this->render('CalendarBundle:Calendar:index');
+        return $this->render('CalendarBundle:Calendar:index.php');
     }
 
     public function feedAction()

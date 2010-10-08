@@ -1,4 +1,4 @@
-<?php $view->extend('::layout') ?>
+<?php $view->extend('::layout.php') ?>
 <?php $view['slots']->set('title', 'Calendar details') ?>
 <?php $view['stylesheets']->add('bundles/calendar/css/wdCalendar/main.css') ?>
 <?php $view['stylesheets']->add('bundles/calendar/css/wdCalendar/dp.css') ?>

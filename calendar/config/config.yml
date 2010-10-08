@@ -1,15 +1,16 @@
-kernel.config:
-    charset:       UTF-8
-    error_handler: null
+#kernel.config:
+#    charset:       UTF-8
+#    error_handler: null
 
-web.config:
+app.config:
     csrf_secret: xxxxxxxxxx
+    charset:     UTF-8
+    error_handler: null
     router:      { resource: "%kernel.root_dir%/config/routing.yml" }
-    validation:  { enabled: true, annotations: true }
-
-web.templating:
-    escaping:       htmlspecialchars
-    #assets_version: SomeVersionScheme
+   # validation:  { enabled: true, annotations: true }
+    templating:
+        escaping:       htmlspecialchars
+      #assets_version: SomeVersionScheme
 
 ## Twig Configuration
 #twig.config:
@@ -20,6 +21,7 @@ doctrine.dbal:
     dbname:   calendar
     user:     root
     password: ~
+
 doctrine.orm: ~
 
 ## Swiftmailer Configuration
